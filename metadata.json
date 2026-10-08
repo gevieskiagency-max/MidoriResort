@@ -1,0 +1,8 @@
+{
+  "name": "Remix MIDORI Private Club – Riviera de Santa Cristina",
+  "description": "Lançamento oficial do MIDORI Private Club na Riviera de Santa Cristina, Represa Jurumirim. Resort boutique privativo para 36 famílias fundadoras.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

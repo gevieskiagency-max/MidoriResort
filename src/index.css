@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #081511;
+    color: #ede7dc;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+
+  .font-display-luxury {
+    font-family: var(--font-display);
+    letter-spacing: 0.08em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #081511;
+}
+::-webkit-scrollbar-thumb {
+  background: #19382d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #255444;
+}
+
+/* Subtle glow and luxury typography shadows */
+.gold-gradient-text {
+  color: #fce4a6;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.9),
+    0 4px 12px rgba(0, 0, 0, 0.75),
+    0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.text-shadow-hero {
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.85),
+    0 4px 12px rgba(0, 0, 0, 0.7),
+    0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-sub {
+  text-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.85),
+    0 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+.emerald-gradient-text {
+  background: linear-gradient(135deg, #4ade80 0%, #00a86b 50%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-luxury {
+  background: rgba(14, 34, 27, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.12);
+}
+
+.glass-card {
+  background: rgba(13, 29, 23, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
